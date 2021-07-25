@@ -1,0 +1,110 @@
+@media screen and (max-width: 500px) {
+    .navigation {
+        z-index: 10;
+        background-color: #ffffff;
+        width: 300px;
+        position: absolute;
+
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.3s ease;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .navigationItem { 
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+        
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .headerMenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+    display: grid;
+    align-items: center;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+ /**   background-image: url("../../dist/images/hero-image_4-small.jpg"); */
+
+/**  background-image: url("../../dist/images/hero-image_4-small.jpg"); */
+background-image: url("../public/dist/hero-image_4-small.jpg");
+    background-position: center;
+    background-color: green;
+    background-size: cover;
+    background-repeat: no-repeat;;
+}
+}
+
+@media screen and (min-width: 800px) {
+    .navigationList {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+.posts {
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 700px) {
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+
+    .restoItemContent{
+        padding: 16px 32px 32px 32px;
+    }
+
+    .restoItemTitle {
+        font-size: 18px;
+    }
+
+    .restoItemDescription {
+        font-size: 14px;
+    }
+
+    .headline__content {
+        padding: 16px 16px;
+    }
+
+    .headline__title {
+        font-size: 28px;
+    }
+
+    .headline__description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+}

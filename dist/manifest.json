@@ -1,0 +1,18 @@
+{
+    "name": "Lumbung Padi Lite",
+    "short_name": "Lumbung Padi Lite",
+    "description": "List of the finest restaurant",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#d84315",
+    "icons": [
+     
+      {
+        "src": "/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ]
+  }
